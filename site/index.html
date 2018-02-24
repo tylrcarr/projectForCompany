@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#000000">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>Pool Pros</title>
+
+    		<link href="assets/fonts/ss-pika/ss-pika.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon-76.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon-120.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon-152.png">
+		<link rel="icon" sizes="196x196" href="assets/img/favicon-196.png">
+		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+	</head>
+
+	<body>
+		<header id="top-bar" class="masthead d-none d-md-block">
+			<div class="container">
+				<div id="top-row" class="d-flex justify-content-end">
+					<div id="top-first">	
+						<a href="#">Dealers and Distributors</a>
+					</div>
+					<div>	
+						<a href="#">Commercial Service <span class="ss-action"></span></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<nav id="top-navbar" class="navbar sticky-top navbar-light navbar-expand-md">
+			<div id="headContainer" class="container">
+				<ul class="nav justify-content-between">
+					<li id="navbar-brand-item" class="d-flex nav-item">
+						<a class="navbar-brand" href="#"><img src="assets/img/pool-pros-logo.png" class="" alt="" /></a>
+					</li>
+					<li id="navbar-item" class="ml-auto nav-item">
+						<div id="nav" class="navbar-collapse collapse ml-auto">
+							<ul class="navbar-nav justify-content-between">
+								<li class="nav-item active d-flex">
+									<a class="nav-link" href="#">Pools & Spas</a>
+								</li>
+								<li class="nav-item d-flex">
+									<a class="nav-link" href="#">Supplies</a>
+								</li>                     
+								<li class="nav-item d-flex">
+									<a class="nav-link" href="#">Resources</a>
+								</li>                     
+								<li class="nav-item d-flex">
+									<a class="nav-link" href="#">Services</a>
+								</li>
+								<li class="nav-item d-flex">
+									<button class="btn btn-outline-primary d-flex find-pro"><span class="ss-location"></span>&nbsp;Find a Pool Pro</button>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li id="find-item" class="d-flex d-md-none nav-item mx-auto my-auto">
+						<button class="btn btn-outline-primary d-flex find-pro"><span class="ss-location"></span> FIND A PRO</button>
+					</li>
+					<li id="toggle-item" class="d-flex d-md-none nav-item ml-auto">
+						<input type="image" src="assets/img/menu-icon-mobile.png" id="nav-toggle" class="navbar-toggler" data-toggle="modal" data-target="#menu" aria-controls="nav" aria-expanded="false"> </input>
+					</li>
+				</ul>
+			</div>
+		</nav>		
+		<div id="menu" class="modal fade d-unset d-md-none" data-backdrop="false">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h6 class="mx-auto my-auto">MENU</h6>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="list-group">
+							<a href="#" class="d-flex list-group-item">
+								<div class="flex-text">Pools & Spas</div>
+								<div class="flex-img">
+									<img src="assets/img/next-arrow.png" class="my-auto"/>
+								</div>
+							</a>
+							<a href="#" class="d-flex list-group-item">
+								<div class="flex-text">Supplies</div>
+								<div class="flex-img">
+									<img src="assets/img/next-arrow.png" class="my-auto"/>
+								</div>
+								
+							</a>
+							<a href="#" class="d-flex list-group-item">
+								<div class="flex-text">Resources </div>
+								<div class="flex-img">
+									<img src="assets/img/next-arrow.png" class="my-auto"/>
+								</div>
+															</a>
+							<a href="#" class="d-flex list-group-item">
+								<div class="flex-text">Services</div>
+								<div class="flex-img">
+									<img src="assets/img/next-arrow.png" class="my-auto"/>
+								</div>
+								
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="top-img"></div>
+		<main role="main" id="main" class="container">
+			<nav id="filter" class="navbar navbar-expand-md navbar-light bg-faded d-flex justify-content-center">
+				<span class="navbar-text">
+					<span id="dealers"></span> dealers in <span id="zip"></span>&nbsp;
+				</span>
+				<div class="btn-group d-flex d-md-none">
+					<button class="btn btn-filter" type="button" data-toggle="collapse" data-target="#navbar-filter" aria-controls="navbar-filter" aria-expanded="false"><span class="d-block d-md-none">Filter Results</span></button>
+					<button class="btn btn-filter-side dropdown-toggle dropdown-toggle-split" type="button" data-toggle="collapse" data-target="#navbar-filter"></button>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-filter">
+					<ul class="navbar-nav justify-content-center">
+						<li id="filter-results" class="nav-item d-none d-md-flex">
+							<a class="nav-link">Filter Results</a>
+						</li>
+						<li class="nav-item">
+							<div class="div-check">
+								<div class="div-checkbox">
+									<div class="div-checkmark"></div>
+								</div>
+								<span class="div-checktext">Service</span>
+								<input id="service" type="checkbox" class="d-none" checked>
+							</div>
+						</li>
+						<li class="nav-item">
+							<div class="div-check">
+								<div class="div-checkbox">
+									<div class="div-checkmark"></div>
+								</div>
+								<span class="div-checktext">Installation</span>
+								<input id="installation" type="checkbox" class="d-none" checked>
+							</div>
+						</li>
+						<li class="nav-item">
+							<div class="div-check">
+								<div class="div-checkbox">
+									<div class="div-checkmark"></div>
+								</div>
+								<span class="div-checktext">Residential</span>
+								<input id="residential" type="checkbox" class="d-none" checked>
+							</div>
+						</li>
+						<li class="nav-item">
+							<div class="div-check">
+								<div class="div-checkbox">
+									<div class="div-checkmark"></div>
+								</div>
+								<span class="div-checktext">
+									Commercial&nbsp;
+									<img src="/assets/img/tool-tip-icon-filtering.png" />
+								</span>
+								<input id="commercial" type="checkbox" class="d-none">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>	
+			<div id="card-area" class="row">
+			</div>
+		</main>
+		<div id="contact" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content clearfix">
+					<div class="modal-header">
+						<p>EMAIL</p>
+						<h3 id="dealer-head">Premium Pools & Spas of Charlotte</h3>
+						<button type="button" class="close d-none d-md-block" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>Fill out the form below and <span id="dealer-name"></span> will get in touch</p>				
+						<form id="contact-form" class="container">
+							<div class="form-group">
+								<label for="name" class="d-flex">
+									<p class="flex-text"><strong>First and Last Name</strong></p>
+									<img class="form-circle flex-img my-auto" src="/assets/img/circle-form.png" />
+								</label>
+								<input id="name" type="text" class="validate input-full" />
+							</div>
+							<div class="form-group width-phone">
+								<label for="phone" class="d-flex">
+									<p class="flex-text"><strong>Phone number</strong></p>
+									<img class="form-circle flex-img my-auto" src="/assets/img/circle-form.png" />
+								</label>
+								<input id="phone" type="text" class="validate input-full" />
+							</div>
+							<div class="form-group">
+								<label for="email" class="d-flex">
+									<p class="flex-text"><strong>Email address</strong></p>
+									<img class="form-circle flex-img my-auto" src="/assets/img/circle-form.png" />
+								</label>
+								<input id="email" type="text" class="validate input-full" />
+							</div>
+							<div class="form-group">
+								<label for="comments" class="d-flex">
+									<p class="flex-text"><strong>Comments or questions</strong></p>
+									<p class="flex-side-text"><em>optional</em></p>
+								</label>
+								<textarea id="comments" type="text" class="input-full"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="pool" class="d-flex">
+									<p class="flex-text"><strong>Do you currently own a pool or spa?</strong></p>
+									<p class="flex-side-text d-none d-md-flex"><em>optional</em></p>
+								</label>
+								<div id="pool" class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+									<div class="btn-group-toggle mr-2 d-none d-md-block" role="group" data-toggle="buttons" aria-label="Yes">
+										<label class="btn btn-outline-secondary btn-sm">
+									     		<input type="radio" name="options" id="yesPool" autocomplete="off"> Yes
+									       	</label>
+										
+										<label class="btn btn-outline-secondary btn-sm">
+									     		<input type="radio" name="options" id="noPool" autocomplete="off"> No
+									       	</label>
+										
+									</div>
+									<div class="d-block d-md-none">
+										<div class="div-radio-form">
+											<div class="div-check box-black box-back-grey div-radio">
+												<div class="div-checkbox">
+													<div class="div-checkmark"></div>
+												</div>
+												<span class="div-checktext">Yes</span>
+												<input id="yesCheck" type="radio" class="d-none" />
+											</div>
+											<div class="div-check box-black box-back-grey div-radio">
+												<div class="div-checkbox">
+													<div class="div-checkmark"></div>
+												</div>
+												<span class="div-checktext">No</span>
+												<input id="noCheck" type="radio" class="d-none" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<input id="company-email" class="d-none" value="" />
+							</hr>
+							<div id="submit" class="container d-flex">
+								<a class="mx-auto my-auto d-none d-md-block" data-toggle="modal" data-target="#contact" href="#">
+									<strong>Send my email</strong>
+									<img src="/assets/img/next-arrow.png" />
+								</a>
+								<a class="ml-auto my-auto d-block d-md-none mobile-send" data-toggle="modal" data-target="#contact" href="#">
+									<strong>Send</strong>
+								</a>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer d-none d-md-block">
+						<div class="container">
+							<p><small>*Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex</small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div id="social">
+				<div id="img-row" class="social-row d-flex justify-content-center">
+					<img class="mx-auto" width="376" height="52" src="/assets/img/pool-pros-logo-footer.png" />
+				</div>
+				<div id="connect-row" class="social-row d-flex justify-content-center">
+					<div id="foot-text">	
+						<p>CONNECT WITH US</p>
+					</div>
+					<div id="social-icons" class="justify-content-between">
+						<a class="foot-social" href="#">
+							<img src="/assets/img/twitter-icon.png" />&nbsp;
+						</a>
+						<a class="foot-social" href="#">
+							<img src="/assets/img/facebook-icon.png" />&nbsp;
+						</a>
+						<a class="foot-social" href="#">
+							<img src="/assets/img/youtube-icon.png" />&nbsp;
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="bottom-bar">
+				<div id="top-to-bottom" class="d-flex d-md-none justify-content-center">
+					<div id="bottom-first"> 
+						<a class="my-auto" href="#">Dealers and Distributors</a>
+					</div>	
+					<div id="bottom-second">	
+						<a class="my-auto" href="#">Commercial Service <span class="ss-action"></span></a>
+					</div>	
+				</div>
+				<div id="true-bottom" class="d-flex justify-content-center">
+					<div id="bottom-left">
+						<a class="my-auto" href="#">&copy;&nbsp;2017 Pool Pros</a>
+					</div>
+					<div id="bottom-middle">
+						<a class="my-auto" href="#">Privacy Policy</a>
+					</div>
+					<div id="bottom-right">
+						<a class="my-auto" href="#">Terms and Conditions</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/jquery.matchHeight.js" type="text/javascript"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="assets/js/app.js"></script>
+  </body>
+</html>
